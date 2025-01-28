@@ -6,17 +6,17 @@ model_name: "my_model"
 # The target word/phrase to be detected by the model. Adding multiple unique words/phrases will
 # still only train a binary model detection model, but it will activate on any one of the provided words/phrases.
 target_phrase:
-  - "hey jarvis"
+  - "hey thai_rheaa"
 
 # Specific phrases that you do *not* want the model to activate on, outside of those generated automatically via phoneme overlap
 # This can be a good way to reduce false positives if you notice that, in practice, certain words or phrases are problematic
 custom_negative_phrases: []
 
 # The total number of positive samples to generate for training (minimum of 20,000 recommended, often 100,000+ is best)
-n_samples: 10000
+n_samples: 30000
 
 # The total number of positive samples to generate for validation and early stopping of model training
-n_samples_val: 2000
+n_samples_val: 5000
 
 # The batch size to use with Piper TTS when generating synthetic training data
 tts_batch_size: 50
